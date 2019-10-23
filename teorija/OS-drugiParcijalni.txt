@@ -1,0 +1,562 @@
+
+******************************************************************************************
+************************************BAZA PITANJA IZ OS************************************
+******************************************************************************************
+
+1.Za interaktivno koriscenje racunara cilj rasporedjivanja je:
+	-ravnomerna raspodela procesorskog vremena
+	-sto kraci odziv na korisnicku akciju
+
+2.Slika procesa sadrzi:
+	-masinske naredbe
+	-promenljive
+	-stek
+
+3.Rukovanje pojedinim bitima memorijskih lokacija omogucuje
+	-ciscenje datog bita u reci
+	-postavljanje datog bita u reci
+	-dobijanje indeksa najznacajnijeg postavljenog bita u reci
+
+4.Interna fregmentacija 
+	-kontinualnih i rasutih datoteka
+
+5.Podela drajvera na gornji i na donji deo podrazumeva
+	-da gornji deo sadrzi operacije drajvera
+	-da donji deo sadrzi obradjivace prekida drajvera
+
+6.Hijerarhijsku organizaciju datoteka karakterise:
+	-apsolutna putanja
+	-relativna putanja
+	-radni imenik
+
+7.Slog datoteke lozinski sadrzi:
+	-ime i lozinku korisnika
+	-numericku oznaku korisnika
+	-putanju radnog imenika korisnika
+	-putanju izvrsne datoteke
+
+8.Translacioni podaci
+	-zavise od vrste adresnog prostora
+	-karakterisu svaki proces
+	-nastaju prilikom stvaranja procesa
+
+9.Evidencija slobodne fizicke memorije moze biti u obliku:
+	-niza bita
+	-liste odsecaka raznih velicina
+	-vise listi odsecaka iste 
+
+10.Spisku lozinki korisnici mogu posredno pristupiti radi:
+	-provere njihove lozinke prilikom svog predstavljanja
+	-radi izmene svoje lozinke
+
+******************************************************************************************
+******************************************1***********************************************
+******************************************************************************************
+
+11.Prilikom stvarnja procesa od procesa stvaraoca se nasledjuju atributi:
+	-podatak o radnom imeniku procesa
+	-prioritet
+
+12.U sistemu datoteka se koriste:
+	-tabela pristupa za rasute datoteke
+	-tabela deskriptora datoteka
+	-tabela otvorenih datoteka
+
+13.Proces identifikator:
+	-koristi numericku oznaku korisnika iz datoteke
+	-stvara proces komunikator
+
+14.Sistem datoteka je u konzistentnom stanju kada u pregledu izmena:
+	-nema registrovanih izmena
+	-postoji registrovan potpun opis izmene i njeno obavljanje
+	-postoji registrovan samo nepotpun opis izmene
+
+15.Sistemski procesi posrednici posredjuju u koriscenju:
+	-stampaca
+	-mreznih kontrolera
+
+16.Za sprecavanje neovlascenog menjanja matrice zastite potrebno je:
+	-razlikovati korisnike
+	-za svaku datoteku znati ko joj je vlasnik
+	-obezbediti da se korisnik predstavi na pocetku rada
+
+17.U sastav tabele pristupa ulaze:
+	-pocetni odsecak
+	-dodatni odsecak
+	-blokovi prvog i drugog stepena indirekcije
+
+18.Fizicka radna memorija se deli na:
+	-lokacije sa naredbama i promenljivim OS-a
+	-lokacije slobodne fizicke radne memorije
+
+19.Link:
+	-oznacava novo ime datoteke
+	-moze biti hard i soft
+	-uvodi alternativnu putanju do sadrzaja datoteke
+
+20.Za proces dugorocni rasporedjivac je karakteristicno:
+	-da se brine o zameni slike procesora
+	-da postoji za sve vreme aktivnosti operativnog sistema
+
+******************************************************************************************
+*******************************************2**********************************************
+******************************************************************************************
+
+21.Atributi procesa obuhvataju:
+	-podatak o radnom imeniku
+	-prioritet procesa
+	-podatke o datotekama koje procesor koristi
+
+
+22.Logicki adresni prostor mogu da cine:
+	-segmenti raznih velicina sacinjeni od stranica istih velicina
+	-stranice istih velicina
+
+23.Proces dugorocni rasporedjivac:
+	-spava izmedju dve aktivacije
+	-se aktivira periodicno
+
+24.Ime datoteke ukazuje na:
+	-njen sadrzaj
+	-njen tip
+
+25.Do nezavisnog visestrukog koriscenja jednog bloka u memoriji dolazi ako se:
+	-prebaci izmenjena tabela pristupa,a ne prebaci izmenjena evidencija slobodnih blokova u 
+masovnu memoriju(ja msm :D)
+
+26.Stvaranje procesa obuhvata:
+	-stvaranje slike procesa
+	-stvaranje deskriptora procesa
+	-pokretanje njegove aktivnosti
+
+27.Drajveri:
+	-omogucuju rukovanje kontrolerima bez poznavanja njihovih nacina funkcionisanja(ja msm :D)
+	-uvode operacije ulaza i izlaza i za blokovske i za znakovne uredjaje
+	-uvode operaciju inicijalizacije i za blokovske i za znakovne uredjaje
+
+28.Skracivanje kvantuma dovodi do:
+	-poboljsanju odziva,ako kvantum nije prekratak
+	-smanjenja odziva,ako je kvantum prekratak
+	-smanjenju iskoriscenosti procesora
+
+29.Sta sadrzi deskriptor kontinuane datoteke:
+-numericku oznaku vlasnika datoteke
+-prava pristupa datoteci za njenog vlasnika
+-podatak da li je datoteka zakljucana ili ne
+-njegove saradnike i ostale korisnike
+-SUID podatak
+-datum poslednje izmene datoteke
+	
+30.Sta sadrzi deskriptor rasute datoteke:
+-isto kao i deskriptor kontinualne i jos
+-pocetni odsecak tabele pristupa
+-redni broj njenog prvog dodatnog odsecka
+-redni broj 1 i 2 bloka indirekcije
+-duzinu rasute datoteke
+
+******************************************************************************************
+*******************************************3**********************************************
+******************************************************************************************
+
+31.Sistemske operacije za rukovanje datotekama:
+-flock(),seek(),read(),write(),create(),open(),close(),link(),unlink(),mount(),unmount()
+
+32.Sta karakterise specijalne datoteke
+-predstavljaju pojedine ulazno izlazne uredjaje
+-postoje znakovne i blokovske
+
+33.Sta sadrzi deskriptor specijalne datoteke:
+-numericku oznaku vlasnika
+-prava pristupa datoteci za njenog vlasnika
+-podatak da li je datoteka zakljucana ili ne
+
+34.Sta omogucuje rukovanje particijama
+-brzi pristup blokovima logicke disk jedinice
+-vecu pouzdanost logicke disk jedinice
+
+35.Koji logicki adresni prostor se koristi kada je vazno RACIONALNO koriscenje fizicke
+radne memorije?
+-segmentni 
+-stranicno segmentni
+
+36.Koji logicki adresni prostor se koristi kada je velicina fizicke radne memorije
+NEDOVOLJNA za pokrivanje potrebe tipicnog procesa?
+-stranicni
+-segmentno stranicni
+
+37.Koji logicki adresni prostor se koristi kada je vazno RACIONALNO koriscenje fizicke
+radne memorije a ona ima nedovoljnu velicinu?
+-stranicno segmentni
+
+38.Sta sadrze elementi tabele stranica?
+-baznu adresu odgovarajuce stranice
+
+39.Fizicka radna memorija se deli na:
+-lokacije koje stalno zauzima OS
+-ostale slobodne
+
+40.Virtuelni adresni prostor se deli:
+-gornji(rezervisana za OS)-> sistemski virtuelni adresni prostor
+-donji(na raspolaganje svakom procesu)->korisnicki virtuelni adresni prostor
+
+******************************************************************************************
+*******************************************4**********************************************
+******************************************************************************************
+
+41.Eksterna fragmentacija se javlja kod adresnog prostora(kog):
+-kontinualnog
+-segmentiranog
+
+42.Skupovi stranica koji se dodeljuju procesima nazivaju se:
+-minimalni skupovi
+
+43.Koji pristupi oslobadjanja fizickih stranica obezbedjuju smanjenje ucestanosti
+stranicnih prekida nakon povecanja broja fizickih stranica procesa 
+- Not recently used (NRU)  
+- Not frequently used (NFU)  
+- Least frequently used (LRU) 
+
+44.Koji pristupi oslobadjanja fizicke stranice koriste BIT REFERENCE
+-NRU,NFU,LRU
+-second chance
+-clock
+-wclock
+
+45.Koji pristupi oslobadjanja fizickih stranica koriste BIT IZMENE:
+-NRU
+-oslobadjanje stranice sa najstarijim sadrzajem
+-second chance
+-clock
+-wclock
+
+46.Rukovanje virtualnom memorijom se oslanja na:
+-operacije sloja za rukovanje kontrolerima
+
+47.Sta sadrzi lista zahteva
+-smer zahtevanog prenosa bloka
+-redni broj ovog bloka
+-adresu bafera koji ucestvuje u prenosu
+-adresu dekstriptora procesora
+
+48.Elevator algoritam
+-drajver blokovskih uredjaja
+
+49.Gornji deo drajvera sata sadrzi operacije:
+-sistemske operacije za preuzimanje ili izmenu sistemskog vremena
+-za uspavljivanje(odlaganje) procesa
+
+50.Sta omogucuje obradjivac prekida iz donjeg dela:
+-odrzavanje sistemskog vremena
+-pracenje isticanja kvantuma
+-pracenje ukupnog koriscenja procesorksog vremena
+-provera da li je nastupilo vreme budjenja uspavanog procesa
+-skupljanje statiske o aktivnosti procesa
+
+******************************************************************************************
+*******************************************5**********************************************
+******************************************************************************************
+
+51.Cilj rasporedjivaca za NEINTERAKTIVNO koriscenje racunara:
+-poboljsanje iskoriscenosti procesorskog vremena
+
+52.Cilj rasporedjivaca za INTERAKTIVNO koriscenje racunara:
+-sto kraci odziv
+-ravnomerna raspodela procesorskog vremena izmedju istovremeno postojecih procesa
+
+53.Zasto je uvedeno kruzno rasporedjivanje:
+-zbog sto kraceg odziva
+-zbog ravnomerne raspodele procesorskog vremena izmedju istovremeno postojecih procesa
+
+54.Sta doprinosi ravnomernoj raspodeli procesorskog vremena:
+-uvodjenje kvantuma
+-dinamicka izmena prioriteta:(izmedju procesa i izmedju korisnika)
+
+55.Cilj rasporedjivanja za multimedijalne aplikacije
+-garantovanje procesima portebnog broja kvantuma u pravilnim vremenskim razmacima
+
+56.Uslovi za pojavu mrtve petlje:
+-zauzimaju se resursi koji su u rezimu medjusobne iskljucivosti
+-resursi se zauzimaju jedan za drugim
+-resurse oslobadjaju samo procesi koji su ih zauzeli
+-postoji cirkularna medjuzavisnost procesa
+
+57.Kako se u praksi tretira problem mrtve petlje:
+-sprecavanje pojave mrtve petlje
+-izbegavanje pojave mrtve petlje
+-otrkivanje pojave mrtve petlje i oporavak od nje
+-ignorisanje pojave mrtve petlje
+
+58.Od cega se sastoje komande znakovnog komandnog jezika:
+-jezik zapocinje operandom
+-zavrsava se operandom ili operandima
+
+59.Kako se zadaju komande grafickih komandi:
+-pomocu graficke predstave komandi(icon)
+-spiska operatora komandi(menu)
+
+60.Ciljevi znakovnih komandnih jezika:
+-omogucavanje izvrsavanja pojedinih korisnickih programa
+-omogucavanje kombinovanja izvrsavanja vise programa
+-omogucavanje pravljenja komandnih datoteka
+
+******************************************************************************************
+*******************************************6**********************************************
+******************************************************************************************
+
+61.Cemu sluzi baferovana specijalna datoteka
+-za razmenu podataka izmedju dva procesa u toku(prvom kao izlaz a drugom kao ulaz)
+
+62.Sta omogucuju korisnicke komande:
+-rukovanje datotekama
+-rukovanje imenicima
+-rukovanje procesima
+-razmenu poruka izmedju korisnika
+
+63.Sta omogucuju administrativne komande:
+-pokretanje i zaustavljanje rada racunara
+-spasavanje i vracanje datoteka
+-rukovanje vremenom
+-kompresovanje podataka
+-azuriranje podataka o korisnicima
+-rukovanje konfiguracijom racunara
+-proveru rada ispravnosti racunara
+-pripremu diskova za koriscenje
+
+64.Koje module sadrzi mikrokernel:
+-modul za rukovanje procesima
+-modul za razmenu poruka
+-modul za rukovanje radnom memorijom
+-modul za rukovanje kontrolerima
+-modul za procesorom
+
+65.Koraci klijentskog potprograma:
+-pronalazenje procesa servera koji pruza zahtevanu uslugu
+-pakovanje argumenata u poruku zahteva
+-slanje serveru poruke zahteva
+-prijem poruke od servera sa rezultatima
+-raspakivanje prispele poruke
+-isporuka rezultata usluge pozivaocu potprograma
+
+66.Za sta su zaduzeni serverski potprogrami:
+-prvi:(prijem poruke zahteva i raspakivanje argumenata iz te poruke)
+-drugi:(pakovanje rezultata usluge u poruku odgovora i slanje klijentu ove poruke odgovora)
+
+67.Koji su problemi vezani za pozive udaljene operacije:
+-nepronalazenje servera koji pruza zahtevanu uslugu
+-da se izgube ili poruka zahteva ili poruka odgovora
+-da dodje do otkaza ili servera ili klijenta u toku rada
+
+68.Sta sadrze dozovole na kojima se zasniva zastita datoteka u distribuiranom stanju:
+-redni broj servera
+-redni broj deskriptora datoteke 
+-oznaku vrste usluge
+-oznaku ispravnosti dozvole
+
+69.Distribuiranu sinhronizaciju karakterise:
+-uvodjenje procesa koordinatora
+-medjusobno dogovaranje procesa 
+-obezbedjuje da se obave sve operacije ili ni jedna od njih->atomske transakcije
+
+70.Distribuirani racunarski sistem:
+-integrise mnostvo racunara u mocan multiracunarski sistem
+-omogucuje deljenje resursa izmedju vise korisnika
+-omogucuje zeljenu raspolozivost i predvidivost odziva
+-omogucuje vecu sigurnost
+
+******************************************************************************************
+71.Distribuiranu softversku platformu karakterise:
+-skrivanje razlicitosti racunara-pravljenjem middleware platforme
+
+72.Sta karakterise tipicne ciljeve rasporedjivanja?
+	-tipican cilj je bolja iskoristenost procesorskog vremena
+	-ravnomerna raspodela procesorskog vremena
+	-kvalitetna reprodukcija
+
+73.Koja prava pristupa postoje
+-izvrsavanja
+-citanja
+-pisanja
+
+74.Sta karakterise kontinualne datoteke?
+	-lako racunanje broja bloka na osnovu broja bajta
+	-kod njih se desava eksterna framentacija
+	-slobodne lokacije se cuvaju u bit mapi
+
+75.Sta oznava SUID?
+	-da vlasnik IZVRSNE datoteke treba da bude vlasnik procesa
+
+76.Kada se koriste operacije modula za ulazno-izlazne uredjaje?
+	-kada se vrsi pisanje i citanje datoteka
+	-kada je potrebno sacuvati sadrzaj bafera
+
+77.Segmentacija:
+	-koristi se kada je vazna racionalna upotreba fizicke memorije
+	-ako se uvodi puna segmentacija,moraju se uvesti prava pristupa za segmente
+
+78.Sta se nalazi u deskriptoru kontinualne datoteke?
+	-numericka oznaka vlasnika
+	-prava pristupa
+	-SUID podatak
+	-datum poslednje izmene
+	-podatak da li je datoteka zakljucana ili ne
+
+79.Sta je neophodno za podmetanje trojanskog konja?
+	-da korisnik umesto da se izloguje(odjavi) ostvari svoj proces koji imitira proces
+identifikator
+
+80.Sta je stepen multiprogramiranja?
+	-najveci moguci broj slika procesa koji mogu istovremeno da postoje u radnoj memoriji
+
+******************************************************************************************
+*******************************************7**********************************************
+******************************************************************************************
+
+81.Koje operacije sadrzi gornji deo drajvera sata?
+	-preuzimanje i izmena sistemskog vremena
+	-uspavljivanje procesa dok ne istekne zadati period
+
+82.Sta sadrzi numericka oznaka korisnika?
+	-dva redna broja->oznaku korisnika i oznaku grupe
+
+83.Asimetricno kriptovanje?
+	-kljuc kriptovanja je javan,dekriptovanja je privatan
+
+84.Simetricno kriptovanje?
+	-Ako algoritam dekriptovanja direktno i jednoznacno sledi iz algoritma kriptovanja,
+a kljuc dekriptovanja iz kljuca kriptovanja, tada je rec o simetricnoj kriptografiji
+
+85.Upravljacke operacije terminala omogucuju?
+	-da se drajveru saopsti da li da interpretira znakove koji dolaze sa tastature
+	-da se drajveru saopsi da li da vrsi eho znakova
+
+86.Koji blokovi se nalaze na disku ?
+	-boot blok(za pokretanje sistema)
+	-super blok
+	-blokovi za deskriptore
+	-blokovi za sadrzaj datoteka
+	-tabela pristupa
+
+87.Kod kojih oblika organizacije datoteka se javljaju problemi eksterne fragmentacije?
+	-kod kontinualnih datoteka
+
+88.Sta moze administrator da radi?
+	-dodaje nove kombinacije ime,lozinka
+	-i brise postojece
+
+89.Sta ima deskriptor kontinualne datoteke?
+	-numericku oznaku vlasnika
+	-prava pristupa
+	-SUID podatak
+	-datum poslednje izmene
+	-podatak da li je datoteka zakljucana ili ne
+
+90.Sta sadrzi virtuelni adresni prostor
+******************************************************************************************
+*******************************************8**********************************************
+******************************************************************************************
+
+91.Sistemske operacije sloja za rukovanje procesima ?
+	-fork(),exec() i exit()
+
+92.Sta dovodi do gubitka bloka pri rukovanju rasutim datotekama?
+	-ako se izmeni sadrzaj liste slobodnih blokova,a ne izmeni tabela pristupa
+
+93.Koje bafere ima Drajver terminala?
+	-ulazni bafer(imaju ga i graficki i znakovni)
+	-eho bafer(ima ga samo znakovni)
+
+94.Sistemske datoteke obrazuju:
+	-datoteke koje pripadaju istoj hijerarhijskoj organizaciji
+
+95.Sta radi back up:
+	-periodicno kopira sadrzaj datoteke(ili samo izmenjene delove)
+	-omogucuje rekonstrukciju izgubljenih delova
+
+96.Na sta ukazuje ime datoteke:
+	-sadrzaj datoteke
+	-tip datoteke
+
+97.Sta obuhvata stvaranje procesa:
+	-stvaranje slike procesa
+	-stvaranje deskriptora procesa
+	-pokretanje aktivnosti
+
+98.Sta je karakteristicno za proces dugorocni rasporedjivac:
+	-aktivira se periodicno
+	-aktivnost mu se zaustavlja izmedju dva aktiviranja
+
+99.Kada dolazi do visestrukog nezavisnog koriscenja istog bloka prilikom produzenja rasute
+datoteke?
+	-kad se na disk prebaci samo promenjena kopija bloka tabele pristupa,a ne prebaci se 
+promenjena kopija bloka evidencije slobodnih blokova
+
+100.Kakav moze biti logicki adresni prostor?
+	-sastavljen od stranica iste velicine
+	-sastavljen od segmenata raznih velicina koji se sastoje od stranica istih velicina
+
+******************************************************************************************
+*******************************************9**********************************************
+******************************************************************************************
+
+101.Koja svojstva imaju drajveri?
+	-nude operacije ulaza i izlaza za blokovske i znakovne uredjaje
+	-nude operacije inicijalizacije za blokovske i znakovne uredjaje
+	-sakrivaju posebnosti funkcionisanja kontrolera
+
+102.Do cega dovodi skracenje kvantuma?
+	-smanjenje iskoriscenja procesora
+	-urgozavanje odziva kad je suvise kratak
+	-poboljsanje odziva kad nije previse kratak
+
+******************************************************************************************
+*******************************************10*********************************************
+******************************************************************************************
+
+PITANJA:
+0-28 : pitanja sa parcijalnih (izvuceno iz grupa)
+29-71: pitanja koja su ili bitna ili su bila(nisam siguran)
+72-102: pitanja sa parcijalnog 2017
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

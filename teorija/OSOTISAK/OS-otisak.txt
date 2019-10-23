@@ -1,0 +1,116 @@
+1. Za interaktivno koriscenje racunara cilj rasporedjivanja je:
+-Ravnomerna raspodela procesorskog vremena
+-Sto kraci odziv na korisnicku akciju.
+
+2. Slika procesa sadrzi:
+-Masinske naredbe
+-Promenljive
+-Stek
+
+3. Rukovanje pojedenim bitima memorijskih lokacija omogucuje
+-Ciscenje datog bita u reci
+-Postavljanje datog bita u reci
+-dobijanje indeksa najznacajnijeg postavljenog bita u reci
+
+4. U primeru simulacije:
+-Deljena promenjljiva "box" uspostavlja komunikacioni kanal izmedju niti korisnika i niti uslozica
+-nit korisnika i nit uslozioca se nalaze u odnosu proizvodjac i potrosac
+
+5. Modul za rukovanje procesima sadrzi operaciju:
+-Citanja
+-Zauzimanja
+-Oslobadjanja
+
+6. Pojam procesa obuhvata:
+-Sliku Procesa
+-Atribute procesa
+-Aktivnost procesa
+
+7. Rukovanje stekom omogucuje da se kao incijalni adrzaja na stek smesti:
+-Frejm poziva funkcije "ad_stack_swap()"
+-Frejm poziva funkcije koja opisuje nit
+
+8. Interna fregmentacija javlja se kod
+-Kontinualnih i rasutih datoteka
+
+9. Podela drajvera na gornji i na donji deo podrazumeva:
+-Da gornji deo sadrzi operacije drajvera
+-Da donji deo sadrzi obradjivace prekida drajvera
+
+10. Hijerarhijsku organizaciju datoteka karakterise:
+-Apsolutna putanja
+-Relativna putanja
+-Radni imenik
+
+11. Slog datoteke lozinki sadrzi:
+-Ime i lozinku korisnika
+-Numericku oznaku korisnika
+
+12. Translacioni podaci:
+-Zavise od vrste adresnog prostora
+-Karakterisu svaki proces
+-Nastaju prilikom stvaranja procesa
+
+13. Drajver terminala Sadrzi:
+-Obradjivac prekida tastature za znakovni terminal
+-OBradjivac prekida ekrana za znakovni terminal
+-Obradjivac prekida testature za graifcki terminal
+
+14. Evidencija slobodne fizicke memorije moze biti u obliku:
+-Niza bita
+-Liste odsecaka raznih velicina
+-Vise listi odsecaka iste velicine stepeni broja 2
+
+15. Spisku lozinki korisnicu mogu posredno pristupiti radi:
+-Provere njihove lozinke prilikom svog prestavljanja
+-Radi izmene svoje lozinke
+
+16. Prilikom Stvaranja procesa od procesa stvaraoca se nasledjuju atributi:
+-Podatak o radnom imeniku procesa
+-Prioritet
+
+17. U Sistemu datoteka se koriste:
+-Tabela pristupa za rasute datoteke
+-Tabela deskriptora datoteka
+-Tabela otvorenih datoteka
+
+18. Proces identifikator:
+-Koristi numericku oznaku korisnika iz datoteke blabla
+-Stvara proces komunikator 
+
+19. Sistem Datoteka je u konzistentom stanju kada u pregledu izmena:
+-Nema registrovanih izmena
+-Postoji registrovan potpun opis izmene i njeno obavljanje
+-Postoji registrovan samo nepotpun opis izmene
+
+20. Sistemski procesi posrednici posredjuju u koriscenju:
+-Stampaca
+-Mreznih kontrolera
+
+21. Za sprecavanje neovlascenog menjanja matrice zastite potrebno je:
+-Razlikovati korisnike
+-Za svaku datoteku znati ko joj je vlasnik
+-Obezbediti da se korisnik predstavi na pocetku rada
+
+22. U sastav tabele pristupa ulaze:
+-Pocetni odsecak
+-Dodatni odsecak
+-Blokovi prvog i drugog stepena indirekekcije
+
+23. Fizicka radna memorija se deli na;
+-Lokacije sa naredbama i promenljivima OS-a
+-Lokacije slobodne fizicke radne memorije
+
+24. Link:
+-Oznacava novo ime datoteke
+-Moze biti hard i soft
+-Uvodi alternativnu putanju do sadrzaja datoteke
+
+25. Za proces dugorocni rasporedjivac je karakteristicno:
+-Da se brine o zameni slike procesora
+-Da postoji za sve vreme aktivnosti operativnog sistema
+
+26. Atributi procesa obuhvataju:
+-Podatke o datotekama koje procesor korisnika
+-Podatak o radnom imeniku
+-Prioritet procesa

@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1558780526 source:c:\users\vaxi\desktop\desktop\faks\4-semestar\operativnisistemi\dz-2019-2put\main.cpp
+	<thread>
+	"procesor.h"
+
+1559259226 c:\users\vaxi\desktop\desktop\faks\4-semestar\operativnisistemi\dz-2019-2put\procesor.h
+	"dijagnostika.h"
+	<deque>
+	<iostream>
+
+1558780359 c:\users\vaxi\desktop\desktop\faks\4-semestar\operativnisistemi\dz-2019-2put\dijagnostika.h
+	<iostream>
+	<mutex>
+	<condition_variable>
+

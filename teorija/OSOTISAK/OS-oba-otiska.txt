@@ -1,0 +1,264 @@
+OS - Oba otiska
+
+1. Za interaktivno koriscenje racunara cilj
+rasporedjivanja je:
+
+-Ravnomerna raspodela procesorskog vremena
+-Sto kraci odziv na korisnicku akciju.
+
+2. Slika procesa sadrzi:
+-Masinske naredbe
+-Promenljive
+-Stek
+
+3. Klasa mutex nasledjuje klasu 
+-Permit
+
+4. Klasa linux_timer omogucuje:
+-Odredjivanje ucestalosti signala SIGVTALARM
+
+5. Preplitanje je
+-Mesanje izvrsavanja naredbni niti i prekidaca prekida
+-Mesanej izvrsavanja naredba niti
+
+6. Deljene promenljive su:
+-Promenljive kojima pristupaju niti i obrade prekida
+-Promenljive kojima pristupaju razne niti
+
+7. Konzistentnost deljene promenljive "kernel" obezbedjuju
+-Atomski regioni
+
+8. Primitivno editiranje klase TERMINAL_IN obuhvata
+-Brisanje poslednje unesenog znaka
+-prepoznavanje upravljackog znaka LF
+-prepoznavanje upravljackog znaka ESC
+
+9. Stvaranje iskljucivog regiona omogucuje klasa
+-Unique_lock
+
+10. Virtuelna masina CppTss ima zadatak da:
+-Podrzavanje okoncanje izdvsavanja konkurentnog prog
+-Podrzava rukovanje stekom
+-emulira mehanizam prekida
+
+11. Ulazeno izlazni moduli CppTss se oslanjaju na:
+-Drajver Testature
+-Drajver diska
+-drajver ekrana.
+
+12. Semafor:
+-Je prilagodjen procedurnom programiarnju
+
+13. Modul za rukovanje datotekama uvodi operaciju
+-Zatvaranja
+
+14. Skevencijalni proces:
+-Neosetljiv je na vanjske dogadjaje
+ima jednu nit
+
+15. Modul za rukovanje datotekama uvodi operaciju
+-Otvaranja
+
+16. U deskriptoru procesa se nalaze:
+-Atributi procesa
+
+17. Klasa condition_variable sadrzi naredbu:
+-wait();
+
+18. Rukovanje pojedenim bitima memorijskih lokacija omogucuje
+-Ciscenje datog bita u reci
+-Postavljanje datog bita u reci
+-dobijanje indeksa najznacajnijeg postavljenog bita u reci
+
+19. Klasa Failure omogucuje:
+-Omogucuje preuzimanje numericke oznake izuzetka
+-Omogucuje preuzimanje stringa sa imenom izuzetka
+
+20. Slojeviti operativni sistem sadrzi modul za rukovanje:
+-Radnom memorijom
+-Procesima
+-Datotekama
+
+21. U primeru 5 filozofa semafori forks[5]:
+-Omogucuju uslovnu sinhronizaciju
+-Omogucuju rukovanje resursima
+-Imaju podrazumevajuce pocetno stanje.
+
+22. U primeru simulacije:
+-Deljena promenjljiva "box" uspostavlja komunikacioni
+kanal izmedju niti korisnika i niti uslozica
+-nit korisnika i nit uslozioca se nalaze u 
+odnosu proizvodjac i potrosac
+
+23. Atomski regioni su:
+-Kriticne sekcije u kojima su onemoguceni prekidi.
+
+24. Klasa Failure omogucuje reagovanje na:
+-Pokusaj signaliziranja van iskljuvog regiona
+-Nedostatak radne memorije
+
+25. Semafor:
+-Omogucuje sinhronizaciju niti
+-Poseduje stanje
+
+26. CppTss za uvodi klasu condition_variable:
+-Dodatni parametar operacije wait()
+-operacije za pozicioniranje
+-pojam priveska
+
+27. Ciljevi od kojih se konkurentno progmiranje
+razlikuje od sekvencijalnog su:
+-Bolje iskoriscenje racunara
+-Cvrsce sprezanje racunara sa okolinom
+
+28. Klasa Permit omogucuje rukovanje:
+-Listom deskriptora niti koje cekaju propusnicu nakon
+ispunjenja uslova
+-propusnicama
+-listom deskriptora koje cekaju propusnicu da bi usle
+u iskljucivi region.
+
+29. Modul za rukovanje procesima uvodi operaciju:
+-stvaranja
+
+30. Klasa "Linux_signal" omogucuje:
+-Pokretanje emulacije prekida
+-reakciju na izuzetak
+-vezivanje operacije "signal_handler()" za signale
+SIGVTALRM i SIGFPE
+
+31. Svaka nit konkurentnog progama ima:
+-Svoje stek
+-Svoj prioritet
+
+32. Rukovanje multi-listom omogucuje operacija za:
+-Izvezivanje deskriptora niti sa pocetka
+najprioritetnije neprazne spremne liste
+-poredjenje prioriteta najprioritetnije
+neprazne spremne liste sa prioritetom zadane niti
+
+33. Klasa unique_lock sadrzi:
+-konstruktor
+
+34. Modul za rukovanje procesima sadrzi operaciju:
+-Citanja
+-Zauzimanja
+-Oslobadjanja
+
+35. Klasa condition_variable omogucuje:
+-uslovnu sinhronizaciju
+
+36. Sinhronizacija je:
+-Vremensko uskladjivanje izvrsavanja kriticnih sekcija
+
+37. Kada se napuni cirkularni bafer za drajver testature:
+-Novi znak se ignorise
+
+38. Pojam procesa obuhvata:
+-Sliku Procesa
+-Atribute procesa
+-Aktivnost procesa
+
+39. Za semafor su vezane operacije:
+-Stop()
+
+40. Rukovanje stekom omogucuje da se kao incijalni
+sadrzaja na stek smesti:
+-Frejm poziva funkcije "ad_stack_swap()"
+-Frejm poziva funkcije koja opisuje nit
+
+41. Interna fregmentacija javlja se kod
+-Kontinualnih i rasutih datoteka
+
+42. Klasa List_link omogucuje:
+-Izvezivanje elemenata sa pocetka liste
+-obrazovanje dvosmernih listi
+-uvezivanjeelemenata na kraj liste
+
+43. Podela drajvera na gornji i na donji deo podrazumeva:
+-Da gornji deo sadrzi operacije drajvera
+-Da donji deo sadrzi obradjivace prekida drajvera
+
+44. Hijerarhijsku organizaciju datoteka karakterise:
+-Apsolutna putanja
+-Relativna putanja
+-Radni imenik
+
+45. Slog datoteke lozinki sadrzi:
+-Ime i lozinku korisnika
+-Numericku oznaku korisnika
+
+46. Translacioni podaci:
+-Zavise od vrste adresnog prostora
+-Karakterisu svaki proces
+-Nastaju prilikom stvaranja procesa
+
+47. Slika procesa sadrzi:
+-Masinske naredbe
+-Promenljive
+-Stek
+
+48. Drajver terminala Sadrzi:
+-Obradjivac prekida tastature za znakovni terminal
+-OBradjivac prekida ekrana za znakovni terminal
+-Obradjivac prekida testature za graifcki terminal
+
+49. Evidencija slobodne fizicke memorije moze biti u obliku:
+-Niza bita
+-Liste odsecaka raznih velicina
+-Vise listi odsecaka iste velicine stepeni broja 2
+
+50. Spisku lozinki korisnicu mogu posredno pristupiti radi:
+-Provere njihove lozinke prilikom svog prestavljanja
+-Radi izmene svoje lozinke
+
+51. Prilikom Stvaranja procesa od procesa stvaraoca se nasledjuju atributi:
+-Podatak o radnim imeniku procesa
+-Prioritet
+
+52. U Sistemu datoteka se koriste:
+-Tabela pristupa za rasute datoteke
+-Tabela deskriptora datoteka
+-Tabela otvorenih datoteka
+
+53. Proces identifikator:
+-Koristi numericku oznaku korisnika
+iz datoteke blabla
+-Stvara proces komunikator 
+
+54. Sistem Datoteka je u konzistentom stanju kada u pregledu izmena:
+-Nema registrovanih izmena
+-Postoje registrov potpun opis izmene i njeno obavljanje
+-Postoji registrovan samo nepotpun opis izmene
+
+55. Sistemski procesi posrednici posredjuju u koriscenju:
+-Stampaca
+-Mreznih kontrolera
+
+56. Za sprecavanje neovlascenog menjanja matrice zastite potrebno je:
+-Razlikovati korisnike
+-Za svaku datoteku znati ko joj je vlasnik
+-Obezbediti da se korisnik predstavi na pocetku rada
+
+57. U sastav tabele pristupa ulaze:
+-Pocetni odsecak
+-Dodatni odsecak
+-Blokovi prvog i drugog stepena indirekekcije
+
+58. Fizika radna memorija se deli na;
+-Lokacije sa naredbana i promenljivima OS-a
+-Lokacije slobodne fizicke radne memorije
+
+59. Link:
+-Oznacava novo ime datoteke
+-Moze biti hard i soft
+-Uvodi alternativnu putanju do sadrzaja datoteke
+
+60. Za proces dugorocni rasporedjivac je karakteristicno:
+-Da se brine o zameni slike procesora
+-Da postoji za sve vreme aktivnosti operativnog sistema
+
+61. Atributi procesa obuhvataju:
+-Podatke o datotekama koje procesor korisnika
+-Podatak o radnom imeniku
+-Prioritet procesa
